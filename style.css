@@ -1,10 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap');
 
+@font-face {
+    font-family: digital-7;
+    src: url(fonts/digital-7.ttf) format('ttf'),
+        url(fonts/digital-7.woff) format('woff');
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     user-select: none;
-    
+
     font-family: Roboto;
 }
