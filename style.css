@@ -44,6 +44,7 @@ button {
     height: 150px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     background-color: #53585e;
     border: 2px solid #06080f;
     gap: 10px;
@@ -53,9 +54,16 @@ button {
 #previousOnScreen,
 #currentOnScreen {
     font-family: digital-7;
-    font-size: 75px;
     color: #2ECC40;
     align-self: flex-end;
+}
+
+#previousOnScreen {
+    font-size: 50px;
+}
+
+#currentOnScreen {
+    font-size: 100px;
 }
 
 .buttons {
