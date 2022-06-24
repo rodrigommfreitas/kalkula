@@ -12,33 +12,40 @@
 <body>
     <main class="calculator">
         <div class="screen">
-
+            <div id="previousOnScreen">
+                1 + 1
+            </div>
+            <div id="currentOnScreen">
+                1 + 1
+            </div>
         </div>
         <div class="buttons">
-            <button id="clearBtn"></button>
-            <button id="undoBtn"></button>
-            <button id="remainderBtn" data-operator>%</button>
-            <button id="divisionBtn" data-operator>÷</button>
+            <button id="clearBtn" class="special">AC</button>
+            <button id="undoBtn" class="special">C</button>
+            <button id="remainderBtn" class="special" data-operator>%</button>
+            <button id="divisionBtn" class="special" data-operator>÷</button>
 
             <button id="numBtn" data-number>7</button>
             <button id="numBtn" data-number>8</button>
             <button id="numBtn" data-number>9</button>
-            <button id="numBtn" data-operator>X</button>
+            <button id="numBtn" class="special" data-operator>x</button>
 
             <button id="numBtn" data-number>4</button>
             <button id="numBtn" data-number>5</button>
             <button id="numBtn" data-number>6</button>
-            <button id="numBtn" data-operator>-</button>
+            <button id="numBtn" class="special" data-operator>-</button>
 
             <button id="numBtn" data-number>1</button>
             <button id="numBtn" data-number>2</button>
             <button id="numBtn" data-number>3</button>
-            <button id="numBtn" data-operator>+</button>
+            <button id="numBtn" class="special" data-operator>+</button>
 
-            <button></button>
+            <button onclick="window.location.href = 'https://github.com/rodrigommfreitas/kalkula';"><img
+                    src="https://iconape.com/wp-content/png_logo_vector/github-circle-coreui-icons-v1-0-0.png" alt="G"
+                    draggable="false"></button>
             <button id="numBtn" data-number>0</button>
             <button id="floatBtn">.</button>
-            <button id="resultBtn"></button>
+            <button id="resultBtn">=</button>
         </div>
     </main>
     <script src="script.js"></script>
