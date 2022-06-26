@@ -27,8 +27,7 @@ function printNumber(num) {
         resetScreen();
         currentScreen.textContent = num;
     }
-    else
-        currentScreen.textContent += num;
+    else currentScreen.textContent += num;
     currentScreenDigits++;
 }
 
