@@ -23,7 +23,6 @@ body {
 
 .calculator {
     width: 475px;
-    height: 770px;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -41,7 +40,6 @@ button {
 
 .screen {
     width: 430px;
-    height: 150px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -49,6 +47,8 @@ button {
     border: 2px solid #06080f;
     gap: 10px;
     padding: 10px;
+    word-wrap: break-word;
+    word-break: break-all;
 }
 
 #previousScreen,
@@ -60,12 +60,12 @@ button {
 
 #previousScreen {
     font-size: 50px;
-    height: 44px;
+    min-height: 44px;
 }
 
 #currentScreen {
     font-size: 100px;
-    height: 86px;
+    min-height: 86px;
 }
 
 .buttons {
