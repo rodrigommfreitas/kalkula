@@ -69,6 +69,7 @@ const add = (a, b) => a + b;
 const subtract = (a, b) => a - b;
 const multiply = (a, b) => a * b;
 const divide = (a, b) => a / b;
+const remainder = (a, b) => a % b;
 
 function operate(operator, a, b) {
     a = Number(a);
@@ -83,6 +84,10 @@ function operate(operator, a, b) {
         case '÷':
             if (b === 0) return null;
             else return divide(a, b);
+        case '%':
+            if (b > a) return a;
+            if (b === 0) return null;
+            return remainder(a,b);
         default:
             return null;
     }
@@ -107,8 +112,9 @@ function evaluate() {
 function convertOperator(operator) {
     if (operator === '/') return '÷';
     if (operator === '*') return '×';
-    if (operator === '-') return '−';
+    if (operator === '-') return '-';
     if (operator === '+') return '+';
+    if (operator === '%') return '%';
 }
 
 function useKeyboard(e) {
