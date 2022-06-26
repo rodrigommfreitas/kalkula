@@ -71,7 +71,6 @@ const multiply = (a, b) => a * b;
 const divide = (a, b) => a / b;
 
 function operate(operator, a, b) {
-    let result;
     a = Number(a);
     b = Number(b);
     switch (operator) {
