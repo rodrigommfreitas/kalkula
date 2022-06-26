@@ -94,9 +94,14 @@ button:active {
     opacity: 75%;
 }
 
-.special {
+[data-operator] {
     color: #FF851B;
     background-color: #5f5e72;
+}
+
+#clearBtn,
+#undoBtn {
+    color: #FF851B;
 }
 
 #resultBtn {
