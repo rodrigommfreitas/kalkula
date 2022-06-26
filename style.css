@@ -44,26 +44,28 @@ button {
     height: 150px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     background-color: #53585e;
     border: 2px solid #06080f;
     gap: 10px;
     padding: 10px;
 }
 
-#previousOnScreen,
-#currentOnScreen {
+#previousScreen,
+#currentScreen {
     font-family: digital-7;
     color: #2ECC40;
     align-self: flex-end;
 }
 
-#previousOnScreen {
+#previousScreen {
     font-size: 50px;
+    height: 44px;
 }
 
-#currentOnScreen {
+#currentScreen {
     font-size: 100px;
+    height: 86px;
 }
 
 .buttons {
@@ -89,7 +91,7 @@ button:hover {
 
 button:active {
     transform: scale(0.975);
-    opacity: 90%;
+    opacity: 75%;
 }
 
 .special {
