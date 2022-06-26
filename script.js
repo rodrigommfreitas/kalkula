@@ -87,7 +87,7 @@ function operate(operator, a, b) {
         case '%':
             if (b > a) return a;
             if (b === 0) return null;
-            return remainder(a,b);
+            return remainder(a, b);
         default:
             return null;
     }
